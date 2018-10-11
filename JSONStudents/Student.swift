@@ -5,7 +5,7 @@ struct Student: CustomStringConvertible, Codable {
         var result = "\(name), Cohort: \(cohort ?? "[unknown cohort]")"
         if let age = age {
             result += ", \(age) years old"
-    }
+        }
     return result
     }
 

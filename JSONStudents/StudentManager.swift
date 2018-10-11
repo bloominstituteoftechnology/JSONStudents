@@ -2,24 +2,35 @@ import UIKit
 
 class StudentManager: NSObject {
     var students: [Student] = []
-}
 
 let url = URL(fileURLWithPath: NSHomeDirectory())
     .appendingPathComponent("Documents")
     .appendingPathComponent("students.json")
 
 func writeToFile(){
-    //do catch
     do {
-        let nameencoded = try JSONEncoder().encode(name)
-        if let string = String(data: nameencoded, encoding: utf8){
+        let studentsEncoded = try JSONEncoder().encode(students)
+        if let string = String(data: studentsEncoded, encoding: .utf8){
             print(string)
         }
-        let namedecoded = try
-            JSONDecoder().decode(Student.self, from: nameencoded)
-        print(name)
+    } catch {
+        print ("Error: \(error)")
+    }
+}
+func readFromFile() {
+        do {
+            let data = try Data(contentsOf: url)
+            let studentsDecoded = try JSONDecoder().decode([Student].self, from: data)
+            students = studentsDecoded
+            print(students)
+        } catch {
+            print("Error: \(error)")
+        }
+    }
+func createFile(name: String, age: Int?, cohort: String?) {
+        let student = Student.init(name: name, age: age, cohort: cohort)
+        students.append(student)
+        print("decoded")
+    }
 }
 
-func readFromFile(){
-    //do catch
-}

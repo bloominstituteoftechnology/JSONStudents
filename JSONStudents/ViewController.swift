@@ -1,6 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var studentManager = StudentManager()
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -23,10 +24,9 @@ class ViewController: UIViewController {
             let age = ageTextField.text,
             let cohort = cohortTextField.text
         else {return}
-        studentManager.create(name:name, age: age, cohort: cohort)
-        studentManager.writeToFile[]
+        studentManager.createFile(name:name, age: Int(age), cohort: cohort)
+        studentManager.writeToFile()
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        <#code#>
+        super.viewWillAppear(animated)
+        studentManager.readFromFile()
     }
 }
 

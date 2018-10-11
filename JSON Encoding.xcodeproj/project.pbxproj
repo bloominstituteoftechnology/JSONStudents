@@ -12,6 +12,8 @@
 		4C6DA3B821700EFA00EB4F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6DA3B621700EFA00EB4F9E /* Main.storyboard */; };
 		4C6DA3BA21700EFB00EB4F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6DA3B921700EFB00EB4F9E /* Assets.xcassets */; };
 		4C6DA3BD21700EFB00EB4F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6DA3BB21700EFB00EB4F9E /* LaunchScreen.storyboard */; };
+		4C99AD57217016C30081351A /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99AD56217016C30081351A /* Student.swift */; };
+		4C99AD59217017020081351A /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99AD58217017020081351A /* StudentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4C6DA3B921700EFB00EB4F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6DA3BC21700EFB00EB4F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6DA3BE21700EFB00EB4F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C99AD56217016C30081351A /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		4C99AD58217017020081351A /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		4C6DA3A621700EF900EB4F9E = {
 			isa = PBXGroup;
 			children = (
+				4C99AD56217016C30081351A /* Student.swift */,
+				4C99AD58217017020081351A /* StudentManager.swift */,
 				4C6DA3B121700EFA00EB4F9E /* JSON Encoding */,
 				4C6DA3B021700EFA00EB4F9E /* Products */,
 			);
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6DA3B521700EFA00EB4F9E /* ViewController.swift in Sources */,
+				4C99AD59217017020081351A /* StudentManager.swift in Sources */,
+				4C99AD57217016C30081351A /* Student.swift in Sources */,
 				4C6DA3B321700EFA00EB4F9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

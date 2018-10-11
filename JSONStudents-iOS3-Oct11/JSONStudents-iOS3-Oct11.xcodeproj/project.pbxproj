@@ -12,6 +12,8 @@
 		27630ACB216FDBF800C38E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27630AC9216FDBF800C38E92 /* Main.storyboard */; };
 		27630ACD216FDBF900C38E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27630ACC216FDBF900C38E92 /* Assets.xcassets */; };
 		27630AD0216FDBF900C38E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27630ACE216FDBF900C38E92 /* LaunchScreen.storyboard */; };
+		27630AD8216FDEB900C38E92 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27630AD7216FDEB900C38E92 /* Student.swift */; };
+		27630ADA216FE3EB00C38E92 /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27630AD9216FE3EB00C38E92 /* StudentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		27630ACC216FDBF900C38E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27630ACF216FDBF900C38E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27630AD1216FDBF900C38E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27630AD7216FDEB900C38E92 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		27630AD9216FE3EB00C38E92 /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		27630AC4216FDBF800C38E92 /* JSONStudents-iOS3-Oct11 */ = {
 			isa = PBXGroup;
 			children = (
-				27630AC5216FDBF800C38E92 /* AppDelegate.swift */,
-				27630AC7216FDBF800C38E92 /* ViewController.swift */,
-				27630AC9216FDBF800C38E92 /* Main.storyboard */,
-				27630ACC216FDBF900C38E92 /* Assets.xcassets */,
-				27630ACE216FDBF900C38E92 /* LaunchScreen.storyboard */,
 				27630AD1216FDBF900C38E92 /* Info.plist */,
+				27630AC5216FDBF800C38E92 /* AppDelegate.swift */,
+				27630ACE216FDBF900C38E92 /* LaunchScreen.storyboard */,
+				27630ACC216FDBF900C38E92 /* Assets.xcassets */,
+				27630AC9216FDBF800C38E92 /* Main.storyboard */,
+				27630AD7216FDEB900C38E92 /* Student.swift */,
+				27630AD9216FE3EB00C38E92 /* StudentManager.swift */,
+				27630AC7216FDBF800C38E92 /* ViewController.swift */,
 			);
 			path = "JSONStudents-iOS3-Oct11";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27630AC8216FDBF800C38E92 /* ViewController.swift in Sources */,
+				27630ADA216FE3EB00C38E92 /* StudentManager.swift in Sources */,
+				27630AD8216FDEB900C38E92 /* Student.swift in Sources */,
 				27630AC6216FDBF800C38E92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,11 +16,7 @@ class StudentManager: NSObject {
         //data.write(to: url)
         do {
             let studentsEncoded = try JSONEncoder().encode(students)
-            if let string = String(data: studentsEncoded, encoding: .utf8) {
-                print(string)
-            }
-            
-           // try studentsEncoded.write(to: url)
+            try studentsEncoded.write(to: url)
         } catch {
             print("Error: \(error)")
         }

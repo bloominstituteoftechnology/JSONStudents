@@ -16,6 +16,8 @@ class StudentManager: NSObject {
         //data.write(to: url)
         do {
             let studentsEncoded = try JSONEncoder().encode(students)
+            
+            
             try studentsEncoded.write(to: url)
         } catch {
             print("Error: \(error)")
@@ -31,5 +33,8 @@ class StudentManager: NSObject {
         } catch {
             print("Error: \(error)")
         }
-}
+
+        
+    
+    }
 }

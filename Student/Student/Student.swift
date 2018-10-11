@@ -10,8 +10,17 @@ import Foundation
 
 struct Student: CustomStringConvertible, Codable {
     var description: String {
-        return "\(name), \(String(describing: age)), \(String(describing: cohort))"
+        var msg = name
+
+        if let age = age {
+            msg = msg + ", aged " + String(age)
+            
+        }
         
+        if let cohort = cohort {
+            msg = msg + ", cohort " + String(cohort)
+        }
+        return msg
 }
 
 

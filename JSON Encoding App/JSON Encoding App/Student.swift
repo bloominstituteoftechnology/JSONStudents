@@ -2,7 +2,10 @@ import Foundation
 
 struct Student: CustomStringConvertible, Codable {
     var description: String {
-        let result = ""
+        var result = "\(name), Cohort: \(cohort ?? "[unknown cohort]")"
+        if let age = age {
+            result += ", \(age) years old"
+        }
         return result
     }
     let name: String

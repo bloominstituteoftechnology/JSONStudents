@@ -72,7 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sW-xI-Ip5"/>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6H-Yw-ZJT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,7 +83,6 @@
                         <outlet property="ageText" destination="Gxl-S8-fvO" id="Jrv-3B-5Gb"/>
                         <outlet property="cohortText" destination="5BW-RT-09F" id="sCd-jA-Qkp"/>
                         <outlet property="nameText" destination="2ye-0X-GEs" id="wCA-lx-Lmf"/>
-                        <outlet property="saveButton" destination="8bC-Xf-vdC" id="yNB-7m-QuU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

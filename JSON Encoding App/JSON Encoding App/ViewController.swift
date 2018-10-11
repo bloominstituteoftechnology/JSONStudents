@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var cohortText: UITextField!
-    
-    let studentManager = StudentManager()
+        let studentManager = StudentManager()
     
     @IBAction func saveButton(_ sender: Any) {
         guard let name = nameText.text else { return}
@@ -30,12 +29,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func printButton(_ sender: Any) {
+        print(studentManager.students)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        studentManager.readFromFile()
+        studentManager.fromReadFile()
   
       
     }

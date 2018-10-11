@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  JSONStudents
-//
-//  Created by Moses Robinson on 10/11/18.
-//  Copyright © 2018 Moses Robinson. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -28,9 +20,10 @@ class ViewController: UIViewController {
     @IBAction func saveButton(_ sender: Any) {
         studentManager.writeToFile()
         guard let name = nameField.text, let age = ageField.text, let cohort = cohortField.text else { return }
-        studentManager.create(name: name, age: age, cohort: cohort)
+        studentManager.create(name: name, age: Int(age), cohort: cohort)
         studentManager.writeToFile()
     }
+    
     
     @IBAction func printButton(_ sender: Any) {
         print(studentManager.students)

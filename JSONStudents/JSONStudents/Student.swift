@@ -2,7 +2,10 @@ import UIKit
 
 struct Student: CustomStringConvertible, Codable {
     var description: String {
-    var result = "\(name), \(cohort), \(age) years old"
+        var result = "\(name), Cohort: \(cohort ?? "iOS3")"
+        if let age = age {
+            result += ", \(age) years old"
+        }
     return result
 }
     

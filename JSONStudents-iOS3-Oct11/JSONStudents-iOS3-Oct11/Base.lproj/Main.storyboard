@@ -12,7 +12,7 @@
         <!--Student Manager-->
         <scene sceneID="40i-wz-1ci">
             <objects>
-                <viewController id="iKF-s8-pbH" sceneMemberID="viewController">
+                <viewController id="iKF-s8-pbH" customClass="StudentViewController" customModule="JSONStudents_iOS3_Oct11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DKQ-Bf-w5D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                                 <rect key="frame" x="166" y="318" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PRINT"/>
+                                <connections>
+                                    <action selector="print:" destination="iKF-s8-pbH" eventType="touchUpInside" id="Pbu-Tq-pZc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-Za-yqF">
                                 <rect key="frame" x="60" y="179" width="48" height="21"/>
@@ -69,12 +72,22 @@
                         <viewLayoutGuide key="safeArea" id="DUJ-RG-SZ9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Student Manager" id="fzm-Bu-DEz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JVU-Vg-bhN"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JVU-Vg-bhN">
+                            <connections>
+                                <action selector="save:" destination="iKF-s8-pbH" id="hDv-jh-avI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="age" destination="oGz-Ns-Wg1" id="tDe-Vn-xa6"/>
+                        <outlet property="cohort" destination="hk4-7F-0AG" id="UPD-79-bNG"/>
+                        <outlet property="name" destination="Xps-RP-BlN" id="5JG-N8-orR"/>
+                        <outlet property="print" destination="DKQ-Bf-w5D" id="FHP-2x-op7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOL-kg-D5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119.2" y="-13.043478260869566"/>
+            <point key="canvasLocation" x="1183" y="-13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xxi-dq-HDC">

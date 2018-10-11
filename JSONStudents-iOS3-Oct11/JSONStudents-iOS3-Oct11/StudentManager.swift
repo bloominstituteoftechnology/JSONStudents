@@ -14,13 +14,17 @@ class StudentManager: NSObject {
 
     var students: [Student] = []
 }
-    
+
+// CREATE FUNC
+
 let url = URL(fileURLWithPath: NSHomeDirectory())
     .appendingPathComponent("Documents")
     .appendingPathComponent("students.json")
 
 func writeToFile() {
+    //encoder
 }
 
 func readFromFile() {
+    //decoder
 }

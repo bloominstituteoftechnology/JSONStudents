@@ -13,6 +13,7 @@
 		77CAFF99216FDD0300A46631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CAFF98216FDD0300A46631 /* Assets.xcassets */; };
 		77CAFF9C216FDD0300A46631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CAFF9A216FDD0300A46631 /* LaunchScreen.storyboard */; };
 		77CAFFA4216FDD6600A46631 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CAFFA3216FDD6600A46631 /* Student.swift */; };
+		77CAFFA6216FE5F400A46631 /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CAFFA5216FE5F400A46631 /* StudentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		77CAFF9B216FDD0300A46631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77CAFF9D216FDD0300A46631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77CAFFA3216FDD6600A46631 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		77CAFFA5216FE5F400A46631 /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				77CAFF91216FDCFE00A46631 /* AppDelegate.swift */,
 				77CAFF93216FDCFE00A46631 /* ViewController.swift */,
 				77CAFFA3216FDD6600A46631 /* Student.swift */,
+				77CAFFA5216FE5F400A46631 /* StudentManager.swift */,
 				77CAFF95216FDCFE00A46631 /* Main.storyboard */,
 				77CAFF98216FDD0300A46631 /* Assets.xcassets */,
 				77CAFF9A216FDD0300A46631 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CAFF94216FDCFE00A46631 /* ViewController.swift in Sources */,
+				77CAFFA6216FE5F400A46631 /* StudentManager.swift in Sources */,
 				77CAFFA4216FDD6600A46631 /* Student.swift in Sources */,
 				77CAFF92216FDCFE00A46631 /* AppDelegate.swift in Sources */,
 			);

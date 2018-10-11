@@ -1,7 +1,9 @@
 import UIKit
 
 struct Student: CustomStringConvertible, Codable {
-    var description: String
+    
+    var description: String {
+    }
     
     let name: String
     let age: Int?

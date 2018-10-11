@@ -96,6 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Sxo-eo-cJU">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="ZPj-Xq-iA4">
+                            <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="saveButton:" destination="BYZ-38-t0r" id="73r-p3-mGn"/>
                             </connections>
@@ -119,6 +120,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eyp-P8-xas">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

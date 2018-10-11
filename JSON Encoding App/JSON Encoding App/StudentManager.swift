@@ -12,13 +12,15 @@ class StudentManager: NSObject {
         .appendingPathComponent("Documents")
         .appendingPathComponent("students.json")
     
-    func writeTOFile() {
+    func writeToFile() {
         //data.write(to: url)
         do {
             let studentsEncoded = try JSONEncoder().encode(students)
+            if let string = String(data: studentsEncoded, encoding: .utf8) {
+                print(string)
+            }
             
-            
-            try studentsEncoded.write(to: url)
+           // try studentsEncoded.write(to: url)
         } catch {
             print("Error: \(error)")
         }
@@ -34,7 +36,8 @@ class StudentManager: NSObject {
             print("Error: \(error)")
         }
 
-        
+        func create(name: String, age: Int?, cohort: String?) {
     
     }
+}
 }

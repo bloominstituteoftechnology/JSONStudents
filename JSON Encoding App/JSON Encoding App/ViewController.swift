@@ -22,15 +22,15 @@ class ViewController: UIViewController {
     let studentManager = StudentManager()
     
     @IBAction func saveButton(_ sender: Any) {
-    
-    
-    guard let name = nameText.text else { return}
-    guard let age = ageText.text else {return}
-    guard let cohort = cohortText.text else {return}
-    studentManager.create(name:name, age: Int(age), cohort: cohort)
-    studentManager.writeToFile()
+        guard let name = nameText.text else { return}
+        guard let age = ageText.text else {return}
+        guard let cohort = cohortText.text else {return}
+        studentManager.create(name: name, age: Int(age), cohort: cohort)
+        studentManager.writeToFile()
     }
     
+    @IBAction func printButton(_ sender: Any) {
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {

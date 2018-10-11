@@ -33,6 +33,6 @@ class StudentManager: NSObject {
     func create(name: String, age: Int?, cohort: String?) {
         let student = Student.init(name: name, age: age, cohort: cohort)
         students.append(student)
-        print("decoded")
+        //print("decoded")
     }
 }

@@ -8,14 +8,28 @@ class StudentManager: NSObject {
         .appendingPathComponent("students.json")
     
     func writeToFile() {
-        do {            
-            data.write(to: url)
+        do {
+            let studentsEncoded = try JSONEncoder().encode(students)
+            if let string = String(data: studentsEncoded, encoding: .utf8) {
+                print(string)
+            }
+            
+        } catch {
+            print("Error: \(error)")
         }
     }
     
     func readFromFile() {
         do {
-            Data(contentsOf: url)
+            let data = try Data(contentsOf: url)
+            let studentsDecoded = try JSONDecoder().decode([Student].self, from: data)
+            students = studentsDecoded
+        } catch {
+            print("Error: \(error)")
+        }
+        
+        func create(name: String, age: Int? = nil, cohort: String? = nil) {
+            
         }
     }
 }

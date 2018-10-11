@@ -10,7 +10,10 @@ class StudentManager: NSObject {
     func writeToFile() {
         do {
             let studentsEncoded = try JSONEncoder().encode(students)
-            try studentsEncoded.write(to: url)
+            if let string = String(data: studentsEncoded, encoding: .utf8) {
+                print(string)
+            }
+            //try studentsEncoded.write(to: url)
         } catch {
             print("Error: \(error)")
         }
@@ -25,5 +28,11 @@ class StudentManager: NSObject {
             print("Error: \(error)")
         }
         
+    }
+    
+    func create(name: String, age: Int?, cohort: String?) {
+        let student = Student.init(name: name, age: age, cohort: cohort)
+        students.append(student)
+        print("decoded")
     }
 }

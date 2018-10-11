@@ -9,7 +9,11 @@ struct Student: CustomStringConvertible, Codable {
     let name: String
     let age: Int?
     let cohort: String?
+    
+    init(name: String, age: Int?, cohort: String?) {
+        (self.name, self.age, self.cohort) = (name, age, cohort)
     }
+}
 
 
 

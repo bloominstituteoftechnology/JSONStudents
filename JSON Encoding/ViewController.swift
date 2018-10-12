@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     
 
-    @IBAction func print(_ sender: Any) {
+    @IBAction func printButton(_ sender: Any) {
         
         for i in studentManager.students {
             print(i)

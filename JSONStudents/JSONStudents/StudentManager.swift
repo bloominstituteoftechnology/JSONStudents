@@ -22,7 +22,6 @@ class StudentManager: NSObject {
     func readFromFile() {
         
         // get data, decode it, and write an error statement with the catch block
-        
         do {
             let studentData = try Data(contentsOf: url)
             let decoder = JSONDecoder()
@@ -31,11 +30,15 @@ class StudentManager: NSObject {
         } catch {
             print("Data could not be retrieved: \(error)")
         }
-        
   
         // decoding outside information to parse
 //        let jsonData = jsonString.data(encoding: .utf8)!
 //        let decoder = JSONDecoder()
 //        let student = try! decoder.decode(Student.self, for: jsonData)
+    }
+    
+    func createStudent(name: String, age: Int?, cohort: String?) {
+        let student = Student.init(name: name, age: age, cohort: cohort)
+        students.append(student)
     }
 }
